@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/top_movies.rb"
+
+# Create Movies
+list_url = "http://www.imdb.com/chart/top"
+movie_info_hash = Scraper.scrape_main_page(list_url)
+movies = Movie.create_from_hash_array(movie_info_hash)
+
+# Make the URL usable
+Movie.all.each do |movie|
+  movie.correct_movie_url
+end
+
+# Explicitly Assign Rankings
+Movie.assign_ranking
+
+# Enter the Library (details can be added once a movie is selected)
+DisplayMovies.new.call

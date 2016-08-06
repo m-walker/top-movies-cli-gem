@@ -66,38 +66,31 @@ class DisplayMovies
   end
 
   def instructions
-    puts <<-DOC
-
-------------------------------------------------------------------------------------------
-You can view a list of a set of 25 and then ask for more information about any of them. 
-
-    1-25    51-75   101-125   151-175   201-225
-    26-50   76-100  126-150   176-200   225-250
-
-Instructions:
-- select the group you would like to view by typing in the first number!
-- if you wish to exit, type "exit"
-------------------------------------------------------------------------------------------
-
-    DOC
+    puts "------------------------------------------------------------------------------------------"
+    puts "Welcome to IMDb's list of the top 250 movies of all time!"
+    puts "You can view a list of a set of 25 and then ask for more information about any of them."
+    puts ""
+    puts "    1-25    51-75   101-125   151-175   201-225"
+    puts "    26-50   76-100  126-150   176-200   225-250"
+    puts ""
+    puts "Instructions:"
+    puts "- select the group you would like to view by typing in the first number!"
+    puts "- if you wish to exit, type 'exit'"
+    puts "------------------------------------------------------------------------------------------"
   end
 
   def welcome
-    puts <<-DOC
-
-------------------------------------------------------------------------------------------
-Welcome to IMDb's list of the top 250 movies of all time!
-You can view a list of a set of 25 and then ask for more information about any of them. 
-
-    1-25    51-75   101-125   151-175   201-225
-    26-50   76-100  126-150   176-200   225-250
-
-Instructions:
-- select the group you would like to view by typing in the first number!
-- if you wish to exit, type "exit"
-------------------------------------------------------------------------------------------
-
-    DOC
+    puts "------------------------------------------------------------------------------------------"
+    puts "Welcome to IMDb's list of the top 250 movies of all time!"
+    puts "You can view a list of a set of 25 and then ask for more information about any of them."
+    puts ""
+    puts "    1-25    51-75   101-125   151-175   201-225"
+    puts "    26-50   76-100  126-150   176-200   225-250"
+    puts ""
+    puts "Instructions:"
+    puts "- select the group you would like to view by typing in the first number!"
+    puts "- if you wish to exit, type 'exit'"
+    puts "------------------------------------------------------------------------------------------"
   end
 
   def goodbye
